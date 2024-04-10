@@ -1,18 +1,27 @@
-import '../styles/Footer.css'
+import { useState } from "react";
+import "../styles/Footer.css";
 
-function Footer() {
-    return (
-        <footer>
-            <div className="footer-content">
-                <p>Copyright FaroTech</p>
-                <ul>
-                    <li><a href="#">Donate with crypto!</a></li>
-                    <li><a href="#">Support us!</a></li>
-                    <li><a href="#">Contact: email</a></li>
-                </ul>
-            </div>
-        </footer>
-    );
-}
+const Footer = () => {
+  const [footerItem] = useState([
+    "Donate with crypto!",
+    "Support us!",
+    "Contact: email",
+  ]);
+
+  return (
+    <footer>
+      <div className="footer-content">
+        <p>Copyright FaroTech</p>
+        <ul>
+          {footerItem.map((item) => (
+            <li key={item}>
+              <a href="#">{item}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;

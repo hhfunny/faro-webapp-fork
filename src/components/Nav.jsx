@@ -1,18 +1,18 @@
-import { useState } from 'react';
-import '../styles/Nav.css';
+import { useState } from "react";
+import "../styles/Nav.css";
 
 const Nav = () => {
   const [ListTop] = useState([
-    'About us',
-    'Timeline',
-    'Our supporters',
-    'Contact us',
+    "About us",
+    "Timeline",
+    "Our supporters",
+    "Contact us",
   ]);
 
   return (
-    <div className='content'>
-      <div className='navBar'>
-        <div className='unbounded title'>
+    <div className="content">
+      <div className="navBar">
+        <div className="unbounded title">
           <p>FaroTech</p>
         </div>
         <ul>
