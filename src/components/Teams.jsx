@@ -1,4 +1,4 @@
-import '../styles/Teams.css';
+import '../styles/BodyArea.css';
 
 const Teams = () => {
   return (

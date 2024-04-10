@@ -10,7 +10,7 @@ import './styles/App.css';
 const App = () => {
   return (
     <>
-      <Top></Top>
+      <Nav></Nav>
       <div className='mainContent'>
         <Logo></Logo>
         <AboutUs></AboutUs>

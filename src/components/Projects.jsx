@@ -1,15 +1,15 @@
-import '../styles/Teams.css';
+import '../styles/BodyArea.css';
 
 const Projects = () => {
   return (
     <>
-      <div className='teams jetbrains-mono'>
-        <div className='teamsTitle'>
+      <div className='projects jetbrains-mono'>
+        <div className='projectsTitle'>
           <h1>#Projects</h1>
           <p>Our projects</p>
         </div>
-        <div className='teamsContent'>
-          <div className='teamsLeft'>
+        <div className='projectsContent'>
+          <div className='projectsLeft'>
             <h1>FMD</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

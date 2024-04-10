@@ -5,10 +5,11 @@ img {
 .logoContent {
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 100px;
   border-radius: 20px;
   background-color: var(--content-background-color);
   padding: 40px;
+
 }
 
 .logoContent>div {
