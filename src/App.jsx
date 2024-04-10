@@ -3,7 +3,7 @@ import AboutUs from './components/AboutUs.jsx';
 import Footer from './components/Footer.jsx';
 import Teams from './components/Teams.jsx';
 import Logo from './components/Logo.jsx';
-import Nav from './components/Top.jsx';
+import Nav from './components/Nav.jsx';
 import './styles/App.css';
 
 
