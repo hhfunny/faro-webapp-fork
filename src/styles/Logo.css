@@ -1,7 +1,14 @@
+img {
+  width: 50%;
+}
+
 .logoContent {
-  margin-top: 20vh;
   display: flex;
   justify-content: center;
+  margin: 50px;
+  border-radius: 20px;
+  background-color: var(--content-background-color);
+  padding: 40px;
 }
 
 .logoContent>div {

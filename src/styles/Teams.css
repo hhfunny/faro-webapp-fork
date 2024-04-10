@@ -1,5 +1,5 @@
-.subTeams {
-    margin-top: 200px;
+.teams {
+    margin-top: 100px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 
-.subTeams .subTeamsTitle {
+.teams .teamsTitle {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,11 +15,12 @@
 }
 
 
-.subTeamsContent {
+.teamsContent {
     width: 70vw;
 }
 
-.subTeamsRight, .subTeamsLeft {
+.teamsRight,
+.teamsLeft {
     padding: 50px 0;
     margin: 50px;
     border-radius: 20px;
@@ -27,17 +28,18 @@
     padding: 40px;
 }
 
-.subTeamsRight p, .subTeamsLeft p {
+.teamsRight p,
+.teamsLeft p {
     width: 30vw;
 }
 
-.subTeamsLeft {
+.teamsLeft {
     display: grid;
     justify-items: start;
     text-align: start;
 }
 
-.subTeamsRight  {
+.teamsRight {
     display: grid;
     justify-items: end;
     text-align: end;

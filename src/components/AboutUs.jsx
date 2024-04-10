@@ -3,7 +3,7 @@ import '../styles/AboutUs.css'
 const AboutUs = () => {
   return (
     <>
-      <div className='aboutUsContent'>
+      <div className='container'>
         <div className='aboutUsTitle jetbrains-mono'>
           <h2>#About us</h2>
           <p>Who we are</p>
