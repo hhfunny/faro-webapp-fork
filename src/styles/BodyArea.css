@@ -1,0 +1,51 @@
+.teams,
+.projects {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.teams .teamsTitle,
+.projects .projectsTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: xx-large;
+}
+
+
+.teamsContent,
+.projectsContent {
+    width: 70vw;
+}
+
+.teamsRight,
+.teamsLeft,
+.projectsLeft {
+    padding: 50px 0;
+    margin: 50px;
+    border-radius: 20px;
+    background-color: var(--content-background-color);
+    padding: 40px;
+}
+
+.teamsRight p,
+.teamsLeft p,
+.projectsLeft p {
+    width: 30vw;
+}
+
+.teamsLeft,
+.projectsLeft {
+    display: grid;
+    justify-items: start;
+    text-align: start;
+}
+
+.teamsRight {
+    display: grid;
+    justify-items: end;
+    text-align: end;
+}
