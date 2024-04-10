@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --faro-color: #ec4b27;
+  --background-color: #272727;
+  --content-background-color: #373737;
+}
+
+.unbounded {
+  font-family: "unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.jetbrains-mono {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#root {
+  background-color: var(--background-color);
+  overflow-y: hidden;
+}
+
+.mainContent {
+  background-image: radial-gradient(rgb(58, 58, 58) 1px, transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
+}

@@ -1,0 +1,18 @@
+.logoContent {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+.logoContent>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoContent>div p {
+  margin: 40px 0;
+  color: var(--faro-color);
+  font-size: 400%;
+  font-family: "unbounded", sans-serif;
+}
