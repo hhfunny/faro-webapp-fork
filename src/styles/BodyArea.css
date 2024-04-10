@@ -1,51 +1,44 @@
 .teams,
 .projects {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 5vw;
 }
 
 .teams .teamsTitle,
 .projects .projectsTitle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: xx-large;
-}
-
-
-.teamsContent,
-.projectsContent {
-    width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: xx-large;
 }
 
 .teamsRight,
 .teamsLeft,
 .projectsLeft {
-    padding: 50px 0;
-    margin: 50px;
-    border-radius: 20px;
-    background-color: var(--content-background-color);
-    padding: 40px;
+  margin: 50px 0;
+  border-radius: 20px;
+  background-color: var(--content-background-color);
+  padding: 40px;
 }
 
 .teamsRight p,
 .teamsLeft p,
 .projectsLeft p {
-    width: 30vw;
+  width: 50vw;
+  word-wrap: break-word;
 }
 
 .teamsLeft,
 .projectsLeft {
-    display: grid;
-    justify-items: start;
-    text-align: start;
+  display: grid;
+  justify-items: start;
+  text-align: start;
 }
 
 .teamsRight {
-    display: grid;
-    justify-items: end;
-    text-align: end;
+  display: grid;
+  justify-items: end;
+  text-align: end;
 }
