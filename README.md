@@ -1,6 +1,6 @@
 # Official FaroTech Webapp
 
-This app is still ⚠️**under development**⚠️ and it lacks many features
+This app is still ⚠️**under development**⚠️ and it lacks many important features
 
 ## 🛠️TODO:
     1. Mobile view (including hiding nav) 
