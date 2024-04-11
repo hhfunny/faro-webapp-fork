@@ -14,31 +14,86 @@
   font-size: xx-large;
 }
 
-.teamsRight,
-.teamsLeft,
+.teams .teamsContent .teamsLeft h1,
+.teams .teamsContent .teamsRight h1,
+.projectsContent h1 {
+  border-bottom: solid;
+  margin-bottom: 5px;
+  width: fit-content;
+}
+
+.teams .teamsContent .teamsLeft h1,
+.projectsContent h1 {
+  border-left: solid;
+  border-color: var(--content-background-color);
+}
+
+.teams .teamsContent .teamsRight h1 {
+  border-right: solid;
+  border-color: var(--content-background-color);
+}
+
+.teams .teamsContent .teamsLeft h1::before,
+.teams .teamsContent .teamsRight h1::before {
+  content: "Team-";
+  color: var(--content-background-color);
+}
+
+
+.teams .teamsContent .teamsRight,
+.teams .teamsContent .teamsLeft,
 .projectsLeft {
   margin: 50px 0;
   border-radius: 20px;
   background-color: var(--content-background-color);
   padding: 40px;
+  height: fit-content;
+  transition: 0.5s;
 }
 
-.teamsRight p,
-.teamsLeft p,
+.teams .teamsContent .teamsRight p,
+.teams .teamsContent .teamsLeft p,
 .projectsLeft p {
   width: 50vw;
   word-wrap: break-word;
 }
 
-.teamsLeft,
+.teams .teamsContent .teamsLeft,
+.teams .teamsContent .teamsRight,
 .projectsLeft {
   display: grid;
+}
+
+.teams .teamsContent.teamsLeft,
+.projectsLeft {
+  border-left: solid;
+  border-color: var(--content-background-color);
   justify-items: start;
   text-align: start;
 }
 
-.teamsRight {
-  display: grid;
+.teams .teamsContent .teamsRight {
   justify-items: end;
   text-align: end;
+}
+
+
+.teams .teamsContent .teamsRight:hover,
+.teams .teamsContent .teamsLeft:hover,
+.projectsLeft:hover {
+  box-shadow: 0 10px 100px 3px black;
+}
+
+.teams .teamsContent .teamsLeft:hover h1,
+.teams .teamsContent .teamsRight:hover h1,
+.projectsContent .projectsLeft:hover h1 {
+  color: var(--faro-color);
+  transition: 0.5s ease-in-out;
+  border-bottom: solid;
+}
+
+.teams .teamsContent .teamsLeft:hover h1::before,
+.teams .teamsContent .teamsRight:hover h1::before {
+  color: var(--faro-color);
+  transition: 0.5s;
 }
