@@ -1,8 +1,10 @@
-# React + Vite
+# Official FaroTech Webapp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app is still ⚠️**under development**⚠️ and it lacks many features
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️TODO:
+    1. Mobile view (including hiding nav) 
+    2. Router (multiple pages) for every team
+    3. Change placeholders
+    4. Add more content to the footer
+    5. Make it possible to donate with crypto via MetaMask (or other wallet)
