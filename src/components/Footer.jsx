@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "../styles/Footer.css";
 
 const Footer = () => {
@@ -8,18 +8,24 @@ const Footer = () => {
     "Contact: email",
   ]);
 
+  const [Sites] = useState(['https://www.wikipedia.org', 'support', 'contact']);
+
   return (
     <footer>
       <div className="footer-content">
-        <p>Copyright FaroTech</p>
         <ul>
-          {footerItem.map((item) => (
-            <li key={item}>
-              <a href="#">{item}</a>
+          {footerItem.map((item, index) => (
+            <li key={index}>
+              <a href="/" onClick={(e) => {
+                e.preventDefault();
+                window.open(Sites[index], '', 'width=500, height=500');
+                console.log(Sites[index])
+              }}>{item}</a>
             </li>
           ))}
         </ul>
       </div>
+      <p>Copyright FaroTech</p>
     </footer>
   );
 };
