@@ -73,3 +73,57 @@ ul li:hover p::before {
   transform: rotate(-180deg);
   color: var(--faro-color);
 }
+
+/* Nav.css */
+
+/* Rest of your CSS... */
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    /* Add some margin to separate from the navBar */
+  }
+
+  .navBar {
+    display: none;
+    /* Hide the navigation bar initially */
+    /* Rest of your styles for navBar */
+  }
+
+  /* When the navBar is active (toggled), display it */
+  .navBar.active {
+    display: flex;
+  }
+
+  ul {
+    flex-direction: column;
+    /* Stack the list items vertically */
+    margin: 0;
+    /* Reset the margin */
+  }
+
+  ul li {
+    padding: 10px 0;
+    /* Adjust the padding for better readability */
+    margin: 10px 0;
+    /* Adjust the margin for better spacing */
+  }
+
+  /* You might also want to adjust the font size or other properties of the list items for better readability on smaller screens */
+  ul li {
+    font-size: smaller;
+    /* Example: Reduce the font size */
+  }
+}
+
+/* Rest of your CSS... */
