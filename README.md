@@ -9,5 +9,5 @@ This app is still ⚠️**under development**⚠️ and it lacks many important 
     2. Router (multiple pages) for every team
     3. Change placeholders
     4. Add more content to the footer
-    5. Make it possible to donate with crypto via MetaMask (or other wallet)
+    5. Make it possible to donate with crypto via MetaMask / Phantom / Brave Wallet
     6. Make light/dark mode switch

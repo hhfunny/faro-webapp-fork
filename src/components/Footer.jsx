@@ -8,7 +8,7 @@ const Footer = () => {
     "Contact: email",
   ]);
 
-  const [Sites] = useState(['https://www.wikipedia.org', 'support', 'contact']);
+  const [Sites] = useState(['https://www.example.com', 'support', 'contact']);
 
   return (
     <footer>

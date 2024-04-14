@@ -1,34 +1,39 @@
-img {
-  width: 50%;
-}
-
 .logoContainer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.logoContent {
-  display: flex;
-  justify-content: center;
-  margin: 10vh 0;
-  min-width: 700px;
-  width: 80vw;
-  max-width: 1600px;
+  position: relative;
+  height: 80vh;
+  margin: 10vh 5vw;
   border-radius: 20px;
   background-color: var(--content-background-color);
-  padding: 40px;
-}
-
-.logoContent > div {
   display: flex;
   flex-direction: column;
+  z-index: 1;
+}
+
+.logoTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.logoContent > div p {
-  margin: 40px 0;
+.logoTitle p {
+  margin: 0;
   color: var(--faro-color);
   font-size: 400%;
   font-family: "unbounded", sans-serif;
+}
+
+
+img {
+  width: 200px;
+}
+
+.logoContent {
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  align-self: flex-end;
 }

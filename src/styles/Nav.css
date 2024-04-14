@@ -1,4 +1,4 @@
-.title > p {
+.title>p {
   color: var(--faro-color);
 }
 
@@ -13,9 +13,10 @@
   padding: 10px 0 10px 0;
   background-color: rgba(39, 39, 39, 0.5);
   backdrop-filter: blur(10px);
+  z-index: 2;
 }
 
-.content > * {
+.content>* {
   overflow: hidden;
 }
 

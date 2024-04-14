@@ -4,11 +4,11 @@ import LogoImage from '../assets/logo.png';
 const Logo = () => {
   return (
     <div className='logoContainer'>
+      <div className='logoTitle'>
+        <p>FaroTech</p>
+      </div>
       <div className='logoContent'>
-        <div>
-          <p>FaroTech</p>
-          <img src={LogoImage}></img>
-        </div>
+        <img src={LogoImage}></img>
       </div>
     </div>
   );
