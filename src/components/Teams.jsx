@@ -12,37 +12,27 @@ const Teams = () => {
           <div className='teamsRight'>
             <h1>Robotics</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Robotics - this is where it all started.
+              The robotics team is the oldest and best-known
+              team at FaroTech. It consists of outstanding mechanics,
+              engineers and programmers
+              who work together to build innovative solutions.
             </p>
           </div>
           <div className='teamsLeft'>
             <h1>Systems</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Team responsible for IT infrastructure: Web technologies,
+              Cloud infrastructure, smart Web Bots, IOT or even the Metaverse.
+              In this team we work hard to create a modern, reliable IT environment.
             </p>
           </div>
           <div className='teamsRight'>
             <h1>Labs</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              The Labs team is dedicated to researching and developing solutions that will revolutionise the world.
+              The team is working on the development of energy sources,
+              fuels and artificial intelligence algorithms.
             </p>
           </div>
         </div>
