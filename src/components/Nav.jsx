@@ -18,14 +18,16 @@ const Nav = () => {
   };
 
   // Function to connect to MetaMask
-  const connectToMetamask = async () => {
-    try {
-      // Requesting access to the user's MetaMask account
-      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-      // Updating state with the connected account
-      setAccount(accounts[0]);
-    } catch (error) {
-      console.error('Error connecting to Metamask:', error);
+  const connectToWallet = async () => {
+    if (!account) { // Check if account is not already connected
+      try {
+        // Requesting access to the user's MetaMask account
+        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        // Updating state with the connected account
+        setAccount(accounts[0]);
+      } catch (error) {
+        alert(`Couldn't connect to the wallet!\nMake sure you have the right extension installed in your browser!`);
+      }
     }
   };
 
@@ -40,8 +42,20 @@ const Nav = () => {
         </div>
         <ul>
           {listTop.map((item, index) => (
-            <li key={index} onClick={item === 'Connect Wallet' ? connectToMetamask : undefined}>
-              <p>{item === 'Connect Wallet' && account ? `Connected: ${account}` : item}</p>
+            <li key={index}>
+              {item === 'Connect Wallet' ? (
+                account ? (
+                  <button className="connect-wallet-button" disabled>
+                    Wallet Connected!
+                  </button>
+                ) : (
+                  <button onClick={connectToWallet} className="connect-wallet-button">
+                    Connect Wallet
+                  </button>
+                )
+              ) : (
+                <p>{item}</p>
+              )}
             </li>
           ))}
         </ul>

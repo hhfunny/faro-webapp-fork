@@ -74,12 +74,12 @@ ul li:hover p::before {
   color: var(--faro-color);
 }
 
-/* Nav.css */
-
-/* Rest of your CSS... */
-
 .nav-toggle {
   display: none;
+}
+
+button {
+  color: black;
 }
 
 @media (max-width: 768px) {
@@ -91,7 +91,6 @@ ul li:hover p::before {
     border: none;
     cursor: pointer;
     margin-bottom: 10px;
-    /* Add some margin to separate from the navBar */
   }
 
   .navBar {
