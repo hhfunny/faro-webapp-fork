@@ -3,12 +3,11 @@ import "../styles/Footer.css";
 
 const Footer = () => {
   const [footerItem] = useState([
-    "Donate with crypto!",
     "Support us!",
-    "Contact: email",
+    "Contact us!",
   ]);
 
-  const [Sites] = useState(['https://www.example.com', 'support', 'contact']);
+  const [Sites] = useState(['support', 'contact']);
 
   return (
     <footer>
