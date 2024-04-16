@@ -12,11 +12,11 @@ footer p {
     align-items: end;
 }
 
-.footer-content {
+.footer--content {
     display: flex;
     align-items: center;
 }
 
-.footer-content>ul>li>a {
+.footer--content ul li a {
     text-decoration: none;
 }

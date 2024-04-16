@@ -4,12 +4,12 @@ const Teams = () => {
   return (
     <>
       <div className='teams jetbrains-mono'>
-        <div className='teamsTitle'>
+        <div className='teams--title'>
           <h1>#Teams</h1>
           <p>Our teams</p>
         </div>
-        <div className='teamsContent'>
-          <div className='teamsRight'>
+        <div className='teams--content'>
+          <div className='teams--right'>
             <h1>Robotics</h1>
             <p>
               Robotics - this is where it all started.
@@ -19,7 +19,7 @@ const Teams = () => {
               who work together to build innovative solutions.
             </p>
           </div>
-          <div className='teamsLeft'>
+          <div className='teams--left'>
             <h1>Systems</h1>
             <p>
               Team responsible for IT infrastructure: Web technologies,
@@ -27,7 +27,7 @@ const Teams = () => {
               In this team we work hard to create a modern, reliable IT environment.
             </p>
           </div>
-          <div className='teamsRight'>
+          <div className='teams--right'>
             <h1>Labs</h1>
             <p>
               The Labs team is dedicated to researching and developing solutions that will revolutionise the world.

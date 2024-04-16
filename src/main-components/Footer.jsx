@@ -11,15 +11,16 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="footer-content">
+      <div className="footer--content">
         <ul>
           {footerItem.map((item, index) => (
             <li key={index}>
-              <a href="/" onClick={(e) => {
-                e.preventDefault();
-                window.open(Sites[index], '', 'width=500, height=500');
-                console.log(Sites[index])
-              }}>{item}</a>
+              <a href="/"
+              // onClick={(e) => {
+                // e.preventDefault();
+                // window.open(Sites[index], '', 'width=500, height=500');
+              // }}
+              >{item}</a>
             </li>
           ))}
         </ul>

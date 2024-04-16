@@ -1,4 +1,4 @@
-.logoContainer {
+.logo--container {
   position: relative;
   height: 80vh;
   margin: calc(15vh) 5vw;
@@ -9,31 +9,33 @@
   z-index: 1;
 }
 
-.logoTitle {
-  position: absolute;
+.logo--title {
+  position: absolute; 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.logoTitle p {
+.logo--title p {
   margin: 0;
   color: var(--faro-color);
   font-size: 400%;
   font-family: "unbounded", sans-serif;
 }
 
-
 img {
   width: 200px;
 }
 
-.logoContent {
+.logo--content {
   position: absolute;
   bottom: 0;
   width: auto;
   align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .logoContainer {
+    margin: 35vh 5vw;
+  }
 }

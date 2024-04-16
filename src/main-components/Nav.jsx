@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../styles/Nav.css";
 
 const Nav = () => {
-  const [account, setAccount] = useState(null); // State to store the connected account
+  const [account, setAccount] = useState(null);
   const [listTop] = useState([
     'About us',
     'Timeline',
@@ -10,20 +10,16 @@ const Nav = () => {
     'Contact us',
     'Connect Wallet'
   ]);
-  const [isNavVisible, setIsNavVisible] = useState(false); // State to control the visibility of the navBar
+  const [isNavVisible, setIsNavVisible] = useState(false);
 
-  // Function to toggle the navBar visibility
   const toggleNavBar = () => {
     setIsNavVisible(!isNavVisible);
   };
 
-  // Function to connect to MetaMask
   const connectToWallet = async () => {
-    if (!account) { // Check if account is not already connected
+    if (!account) {
       try {
-        // Requesting access to the user's MetaMask account
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-        // Updating state with the connected account
         setAccount(accounts[0]);
       } catch (error) {
         alert(`Couldn't connect to the wallet!\nMake sure you have the right extension installed in your browser!`);
@@ -32,12 +28,15 @@ const Nav = () => {
   };
 
   return (
-    <div className="content">
-      <button className="nav-toggle" onClick={toggleNavBar}>
+    <div className="nav--content">
+      <div className="nav--button-content">
+
+      <button className="nav--toggle jetbrains-mono" onClick={toggleNavBar}>
         Menu
       </button>
-      <div className={`navBar ${isNavVisible ? 'active' : ''}`}>
-        <div className="unbounded title">
+      </div>
+      <div className={`nav--bar ${isNavVisible ? 'active' : ''}`}>
+        <div className="unbounded nav--title">
           <p>FaroTech</p>
         </div>
         <ul>
@@ -45,11 +44,11 @@ const Nav = () => {
             <li key={index}>
               {item === 'Connect Wallet' ? (
                 account ? (
-                  <button className="connect-wallet-button" disabled>
+                  <button className="nav--connect-wallet-button" disabled>
                     Wallet Connected!
                   </button>
                 ) : (
-                  <button onClick={connectToWallet} className="connect-wallet-button">
+                  <button onClick={connectToWallet} className="nav--connect-wallet-button">
                     Connect Wallet
                   </button>
                 )

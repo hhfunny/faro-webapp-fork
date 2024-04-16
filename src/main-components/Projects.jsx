@@ -4,12 +4,12 @@ const Projects = () => {
   return (
     <>
       <div className='projects jetbrains-mono'>
-        <div className='projectsTitle'>
+        <div className='projects--title'>
           <h1>#Projects</h1>
           <p>Our projects</p>
         </div>
-        <div className='projectsContent'>
-          <div className='projectsLeft'>
+        <div className='projects--content'>
+          <div className='projects--left'>
             <h1>FMD</h1>
             <p>
               Project “FaroMayDay” is an

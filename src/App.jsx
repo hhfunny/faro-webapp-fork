@@ -1,9 +1,10 @@
-import Projects from './components/Projects.jsx';
-import AboutUs from './components/AboutUs.jsx';
-import Footer from './components/Footer.jsx';
-import Teams from './components/Teams.jsx';
-import Logo from './components/Logo.jsx';
-import Nav from './components/Nav.jsx';
+import Projects from './main-components/Projects.jsx';
+import AboutUs from './main-components/AboutUs.jsx';
+import Footer from './main-components/Footer.jsx';
+import Slider from './main-components/Slider.jsx';
+import Teams from './main-components/Teams.jsx';
+import Logo from './main-components/Logo.jsx';
+import Nav from './main-components/Nav.jsx';
 import './styles/App.css';
 
 
@@ -11,11 +12,12 @@ const App = () => {
   return (
     <>
       <Nav></Nav>
-      <div className='mainContent'>
+      <div className='app--mainContent'>
         <Logo></Logo>
         <AboutUs></AboutUs>
         <Teams></Teams>
         <Projects></Projects>
+        <Slider></Slider>
         <Footer></Footer>
       </div>
     </>

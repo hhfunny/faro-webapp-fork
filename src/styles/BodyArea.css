@@ -6,36 +6,36 @@
   margin: 0 5vw;
 }
 
-.teams .teamsTitle,
-.projects .projectsTitle {
+.teams--title,
+.projects--title {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: xx-large;
 }
 
-.teams .teamsContent .teamsLeft h1,
-.teams .teamsContent .teamsRight h1,
-.projectsContent h1 {
+.teams--left h1,
+.teams--right h1,
+.projects--content h1 {
   border-bottom: solid;
   margin-bottom: 5px;
   width: fit-content;
 }
 
-.teams .teamsContent .teamsLeft h1,
-.projectsContent h1 {
+.teams--left h1,
+.projects--content h1 {
   border-left: solid;
   border-color: var(--content-background-color);
 }
 
-.teams .teamsContent .teamsRight h1 {
+.teams--right h1 {
   border-right: solid;
   border-color: var(--content-background-color);
 }
 
-.teams .teamsContent .teamsRight,
-.teams .teamsContent .teamsLeft,
-.projectsLeft {
+.teams--right,
+.teams--left,
+.projects--left {
   margin: 50px 0;
   border-radius: 20px;
   background-color: var(--content-background-color);
@@ -44,43 +44,42 @@
   transition: 0.5s;
 }
 
-.teams .teamsContent .teamsRight p,
-.teams .teamsContent .teamsLeft p,
-.projectsLeft p {
+.teams--right p,
+.teams--left p,
+.projects--left p {
   width: 50vw;
   word-wrap: break-word;
 }
 
-.teams .teamsContent .teamsLeft,
-.teams .teamsContent .teamsRight,
-.projectsLeft {
+.teams--left,
+.teams--right,
+.projects--left {
   display: grid;
 }
 
-.teams .teamsContent.teamsLeft,
-.projectsLeft {
+.teams--left,
+.projects--left {
   border-left: solid;
   border-color: var(--content-background-color);
   justify-items: start;
   text-align: start;
 }
 
-.teams .teamsContent .teamsRight {
+.teams--right {
   justify-items: end;
   text-align: end;
 }
 
-.teams .teamsContent .teamsRight:hover,
-.teams .teamsContent .teamsLeft:hover,
-.projectsLeft:hover {
+.teams--right:hover,
+.teams--left:hover,
+.projects--left:hover {
   box-shadow: 0 10px 100px 3px black;
 }
 
-/* Common styles for h1 elements that will have the animated underline */
-.teams .teamsContent .teamsLeft h1,
-.teams .teamsContent .teamsRight h1,
-.projects .projectsContent h1,
-.projects .projectsLeft h1 {
+.teams--left h1,
+.teams--right h1,
+.projects--content h1,
+.projects--left h1 {
   position: relative;
   border-bottom: none;
   margin-bottom: 5px;
@@ -88,42 +87,31 @@
   transition: color 0.5s ease;
 }
 
-.teams .teamsContent .teamsLeft:hover h1,
-.teams .teamsContent .teamsRight:hover h1,
-.projects .projectsContent:hover h1,
-.projects .projectsLeft:hover h1 {
+.teams--left:hover h1,
+.teams--right:hover h1,
+.projects--content:hover h1,
+.projects--left:hover h1 {
   color: var(--faro-color);
-  /* Set the text color to orange on hover */
 }
 
-/* Add this for the animated underline effect */
-.teams .teamsContent .teamsLeft h1::after,
-.teams .teamsContent .teamsRight h1::after,
-.projects .projectsContent h1::after,
-.projects .projectsLeft h1::after {
+.teams--left h1::after,
+.teams--right h1::after,
+.projects--content h1::after,
+.projects--left h1::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
-  /* Start with no width */
   height: 2px;
-  /* Thickness of the underline */
   background-color: transparent;
-  /* Start with a transparent color */
-  transition: width 0.5s ease, background-color 0.5s ease;
-  /* Animate the width and background-color change */
+  transition: 0.5s ease;
 }
 
-/* Add this for the hover state on the parent */
-.teams .teamsContent .teamsLeft:hover h1::after,
-.teams .teamsContent .teamsRight:hover h1::after,
-.projects .projectsContent:hover h1::after,
-.projects .projectsLeft:hover h1::after {
+.teams--left:hover h1::after,
+.teams--right:hover h1::after,
+.projects--content:hover h1::after,
+.projects--left:hover h1::after {
   width: 100%;
-  /* Full width on hover of the parent */
   background-color: var(--faro-color);
-  /* Fade in the --faro-color on hover */
 }
-
-/* Rest of your CSS */
