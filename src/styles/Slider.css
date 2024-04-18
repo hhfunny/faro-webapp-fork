@@ -3,6 +3,7 @@
     justify-content: center;
     background-color: var(--content-background-color);
     margin: 0 5vw;
+    border-radius: 20px;
 }
 
 .slide-container {
@@ -15,42 +16,26 @@
     height: 50px;
 }
 
-div.slider--container div img {
-    height: fit-content;
-}
-
-button.slider--arrowprevbutton,
-button.slider--arrownextbutton {
-    height: calc(100% - 50px);
-    top: 0;
-    width: 0;
-    /* background: var(--content-background-color); */
-    background: white;
+.slider--arrowprevbutton,
+.slider--arrownextbutton {
+    height: 100%;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.5);
     border: none;
-    transition: width 1s ease;
+    transition: width 0.5s ease;
 }
 
-.lete,
-.rite {
-    text-transform: uppercase;
-    font-size: large;
-    display: none;
-    height: 0;
+.slider--arrowprevbutton {
+    border-radius: 20px 0 0 20px;
 }
 
-div.slider--container div:hover .slider--arrownextbutton,
-div.slider--container div:hover .slider--arrowprevbutton {
+.slider--arrownextbutton {
+    border-radius: 0 20px 20px 0;
+}
+
+.slider--container div:hover .slider--arrownextbutton,
+.slider--container div:hover .slider--arrowprevbutton {
     width: 100px;
-}
-
-div.slider--container div:hover .rite {
-    transform: rotate(90deg);
-    /* display: inline-block; */
-}
-
-div.slider--container div:hover .lete {
-    transform: rotate(-90deg);
-    /* display: inline-block; */
 }
 
 .fade--item {
@@ -58,10 +43,4 @@ div.slider--container div:hover .lete {
     align-items: center;
     height: 50vh;
     flex-direction: column;
-}
-
-@media (max-width: 100px) {
-    .lete, .rite {
-        display: inline-block;
-    }
 }

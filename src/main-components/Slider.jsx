@@ -10,14 +10,9 @@ const Slider = () => {
 
   const properties = {
     prevArrow:
-      <button className='slider--arrowprevbutton jetbrains-mono'>
-        <p className='lete'>Previous</p>
-      </button>,
-
+      <button className='slider--arrowprevbutton jetbrains-mono'>{'<'}</button>,
     nextArrow:
-      <button className='slider--arrownextbutton jetbrains-mono' id='button1'>
-        <p className='rite'>Next</p>
-      </button>
+      <button className='slider--arrownextbutton jetbrains-mono'>{'>'}</button>
   }
 
 
@@ -42,11 +37,11 @@ const Slider = () => {
       <div className="slide-container slider--container">
         <Fade
           {...properties}
-          transitionDuration={500}
+          transitionDuration={200}
           autoplay={false}
         >
           {FadeImages.map((fadeImage, index) => (
-            <div className='fade--item' key={index}>
+            <div className='fade--item jetbrains-mono' key={index}>
               <h2>{fadeImage.title}</h2>
               <p>{fadeImage.description}</p>
             </div>
