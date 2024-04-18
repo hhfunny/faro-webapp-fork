@@ -53,6 +53,13 @@ div.slider--container div:hover .lete {
     /* display: inline-block; */
 }
 
+.fade--item {
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+}
+
 @media (max-width: 100px) {
     .lete, .rite {
         display: inline-block;
