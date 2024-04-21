@@ -1,7 +1,7 @@
 .logo--container {
   position: relative;
   height: 80vh;
-  margin: calc(15vh) 5vw;
+  margin: 0 5vw 15vh 5vw;
   border-radius: 20px;
   background-color: var(--content-background-color);
   display: flex;

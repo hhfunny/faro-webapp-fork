@@ -29,12 +29,6 @@ const Nav = () => {
 
   return (
     <div className="nav--content">
-      <div className="nav--button-content">
-
-      <button className="nav--toggle jetbrains-mono" onClick={toggleNavBar}>
-        Menu
-      </button>
-      </div>
       <div className={`nav--bar ${isNavVisible ? 'active' : ''}`}>
         <div className="unbounded nav--title">
           <p>FaroTech</p>
@@ -58,6 +52,12 @@ const Nav = () => {
             </li>
           ))}
         </ul>
+      </div>
+      <div className="nav--button-content">
+
+      <button className="nav--toggle jetbrains-mono" onClick={toggleNavBar}>
+        Menu
+      </button>
       </div>
     </div>
   );

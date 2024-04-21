@@ -1,15 +1,16 @@
-import '../styles/BodyArea.css';
+import { Link, Outlet } from "react-router-dom";
+import './styles/BodyArea.css'
 
 const Teams = () => {
   return (
-    <>
-      <div className='teams jetbrains-mono'>
-        <div className='teams--title'>
-          <h1>#Teams</h1>
-          <p>Our teams</p>
-        </div>
-        <div className='teams--content'>
-          <div className='teams--right'>
+    <div className='teams jetbrains-mono'>
+      <div className='teams--title'>
+        <h1>#Teams</h1>
+        <p>Our teams</p>
+      </div>
+      <div className='teams--content'>
+        <Link to='/robotics'>
+          <div className='teams--left'>
             <h1>Robotics</h1>
             <p>
               Robotics - this is where it all started.
@@ -19,7 +20,9 @@ const Teams = () => {
               who work together to build innovative solutions.
             </p>
           </div>
-          <div className='teams--left'>
+        </Link>
+        <Link to='/systems'>
+          <div className='teams--right'>
             <h1>Systems</h1>
             <p>
               Team responsible for IT infrastructure: Web technologies,
@@ -27,7 +30,9 @@ const Teams = () => {
               In this team we work hard to create a modern, reliable IT environment.
             </p>
           </div>
-          <div className='teams--right'>
+        </Link>
+        <Link to='/labs'>
+          <div className='teams--left'>
             <h1>Labs</h1>
             <p>
               The Labs team is dedicated to researching and developing solutions that will revolutionise the world.
@@ -35,9 +40,10 @@ const Teams = () => {
               fuels and artificial intelligence algorithms.
             </p>
           </div>
-        </div>
+        </Link>
       </div>
-    </>
+      <Outlet/>
+    </div>
   );
 };
 

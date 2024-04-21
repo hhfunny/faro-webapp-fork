@@ -1,27 +1,28 @@
-import Projects from './main-components/Projects.jsx';
-import AboutUs from './main-components/AboutUs.jsx';
-import Footer from './main-components/Footer.jsx';
-import Slider from './main-components/Slider.jsx';
-import Teams from './main-components/Teams.jsx';
-import Logo from './main-components/Logo.jsx';
-import Nav from './main-components/Nav.jsx';
-import './styles/App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
+import MainPage from './pages/MainPage.jsx'
+import Teams from './Teams.jsx';
+import LabsPage from './pages/LabsPage.jsx';
+import Layout from './layout.jsx'
+import RoboticsPage from './pages/RoboticsPage.jsx'
+import './styles/App.css';
+import SystemsPage from './pages/SystemsPage.jsx';
 
 const App = () => {
+
   return (
-    <>
-      <Nav></Nav>
-      <div className='app--mainContent'>
-        <Logo></Logo>
-        <AboutUs></AboutUs>
-        <Teams></Teams>
-        <Projects></Projects>
-        <Slider></Slider>
-        <Footer></Footer>
-      </div>
-    </>
-  );
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<MainPage />} />
+          <Route path='teams' element={<Teams />} />
+          <Route path='robotics' element={<RoboticsPage/>}/>
+          <Route path='labs' element={<LabsPage />} />
+          <Route path='systems' element={<SystemsPage/>}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+  )
 };
 
 export default App;
