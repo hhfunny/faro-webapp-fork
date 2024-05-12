@@ -8,9 +8,9 @@ const Teams = () => {
         <h1>#Teams</h1>
         <p>Our teams</p>
       </div>
-      <div className='teams--content'>
+      <div className='teams--content '>
         <Link to='/robotics'>
-          <div className='teams--left'>
+          <div className='teams--left teams--item onhover--items'>
             <h1>Robotics</h1>
             <p>
               Robotics - this is where it all started.
@@ -22,7 +22,7 @@ const Teams = () => {
           </div>
         </Link>
         <Link to='/systems'>
-          <div className='teams--right'>
+          <div className='teams--right teams--item onhover--items'>
             <h1>Systems</h1>
             <p>
               Team responsible for IT infrastructure: Web technologies,
@@ -32,7 +32,7 @@ const Teams = () => {
           </div>
         </Link>
         <Link to='/labs'>
-          <div className='teams--left'>
+          <div className='teams--left teams--item onhover--items'>
             <h1>Labs</h1>
             <p>
               The Labs team is dedicated to researching and developing solutions that will revolutionise the world.

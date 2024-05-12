@@ -33,9 +33,9 @@
   border-color: var(--content-background-color);
 }
 
-.teams--right,
-.teams--left,
-.projects--left {
+
+.teams--item,
+.projects--item {
   margin: 50px 0;
   border-radius: 20px;
   background-color: var(--content-background-color);
@@ -44,16 +44,14 @@
   transition: 0.5s;
 }
 
-.teams--right p,
-.teams--left p,
-.projects--left p {
+.teams--item p,
+.projects--item p {
   width: 50vw;
   word-wrap: break-word;
 }
 
-.teams--left,
-.teams--right,
-.projects--left {
+.teams--item, 
+.projects--item {
   display: grid;
 }
 
@@ -70,16 +68,9 @@
   text-align: end;
 }
 
-.teams--right:hover,
-.teams--left:hover,
-.projects--left:hover {
-  box-shadow: 0 10px 100px 3px black;
-}
-
-.teams--left h1,
-.teams--right h1,
-.projects--content h1,
-.projects--left h1 {
+.teams--item h1,
+.projects--item h1
+{
   position: relative;
   border-bottom: none;
   margin-bottom: 5px;
@@ -87,17 +78,9 @@
   transition: color 0.5s ease;
 }
 
-.teams--left:hover h1,
-.teams--right:hover h1,
-.projects--content:hover h1,
-.projects--left:hover h1 {
-  color: var(--faro-color);
-}
 
-.teams--left h1::after,
-.teams--right h1::after,
-.projects--content h1::after,
-.projects--left h1::after {
+.teams--item h1::after,
+.projects--item h1::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -108,10 +91,16 @@
   transition: 0.5s ease;
 }
 
-.teams--left:hover h1::after,
-.teams--right:hover h1::after,
-.projects--content:hover h1::after,
-.projects--left:hover h1::after {
+.onhover--items:hover {
+  box-shadow: 0 10px 100px 3px black;
+}
+
+
+.onhover--items:hover h1::after {
   width: 100%;
   background-color: var(--faro-color);
+}
+
+.onhover--items:hover h1{
+  color: var(--faro-color);
 }

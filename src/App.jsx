@@ -1,12 +1,13 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
-import MainPage from './pages/MainPage.jsx'
-import Teams from './Teams.jsx';
-import LabsPage from './pages/LabsPage.jsx';
-import Layout from './layout.jsx'
-import RoboticsPage from './pages/RoboticsPage.jsx'
-import './styles/App.css';
+import RoboticsPage from './pages/RoboticsPage.jsx';
 import SystemsPage from './pages/SystemsPage.jsx';
+import LabsPage from './pages/LabsPage.jsx';
+import MainPage from './pages/MainPage.jsx';
+import Layout from './layout.jsx';
+import Teams from './Teams.jsx';
+
+import './styles/App.css';
 
 const App = () => {
 
